@@ -63,27 +63,27 @@ const Contact = () => {
         {
             icon: FiMail,
             title: 'Email',
-            value: 'your.email@example.com',
-            link: 'mailto:your.email@example.com'
+            value: 'shlokchavan3011@gmail.com',
+            link: 'mailto:shlokchavan3011@gmail.com'
         },
-        {
+        /*{
             icon: FiPhone,
             title: 'Phone',
             value: '+1 (555) 123-4567',
             link: 'tel:+15551234567'
-        },
+        },*/
         {
             icon: FiMapPin,
             title: 'Location',
-            value: 'Your City, Country',
+            value: 'Mumbai, India',
             link: '#'
         }
     ];
 
     const socialLinks = [
         { icon: FiGithub, url: 'https://github.com/shlokchavan', name: 'GitHub' },
-        { icon: FiLinkedin, url: 'https://linkedin.com/in/shlokchavan', name: 'LinkedIn' },
-        { icon: FiInstagram, url: 'https://instagram.com/shlokchavan', name: 'Instagram' }
+        { icon: FiLinkedin, url: 'hthttps://www.linkedin.com/in/shlok-chavan-17926a356', name: 'LinkedIn' },
+        { icon: FiInstagram, url: 'https://instagram.com/shlokchavan_1195', name: 'Instagram' }
     ];
 
     return (

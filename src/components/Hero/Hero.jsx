@@ -128,11 +128,12 @@ import { FiGithub, FiLinkedin, FiInstagram, FiDownload, FiCode, FiShield, FiCpu 
 import './Hero.css';
 import profilePic from "../../photos/profilepic.jpg";
 
+
 const Hero = () => {
     const socialLinks = [
-        { icon: FiGithub, url: 'https://github.com/shlokchavan', name: 'GitHub' },
-        { icon: FiLinkedin, url: 'https://linkedin.com/in/shlok-chavan', name: 'LinkedIn' },
-        { icon: FiInstagram, url: 'https://instagram.com/shlokchavan', name: 'Instagram' }
+        { icon: FiGithub, url: 'https://github.com/shlokuchavan', name: 'GitHub' },
+        { icon: FiLinkedin, url: 'https://linkedin.com/in/shlok-chavan-17926a356', name: 'LinkedIn' },
+        { icon: FiInstagram, url: 'https://instagram.com/shlok_chavan_1195/', name: 'Instagram' }
     ];
 
     const containerVariants = {
@@ -155,11 +156,14 @@ const Hero = () => {
     };
 
     const handleDownloadCV = () => {
+        // Use an absolute path from the public folder
         const link = document.createElement('a');
-        link.href = '/shlok-chavan-cv.pdf';
-        link.download = 'Shlok-Chavan-CV.pdf';
-        link.click();
-    };
+        link.href = '/Shlok-Chavan-cv.pdf'; // public folder files are served from root
+        link.download = 'Shlok-Chavan-cv.pdf';
+        document.body.appendChild(link); // append link to DOM
+        link.click(); // trigger download
+        document.body.removeChild(link); // remove the link
+    };;
 
     const scrollToProjects = () => {
         const element = document.getElementById('projects');
@@ -183,7 +187,7 @@ const Hero = () => {
 
                     <motion.div variants={itemVariants} className="hero-subtitle-container">
                         <span className="hero-subtitle">
-                            Tech Enthusiast & Full Stack Developer
+                            Tech Enthusiast
                         </span>
                         <div className="title-decoration"></div>
                     </motion.div>

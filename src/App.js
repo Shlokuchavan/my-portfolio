@@ -6,6 +6,8 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import { useTheme } from './hooks/useTheme';
+import Footer from './components/Footer/Footer';
+import ChatbotTerminal from './components/Footer/chatbot'; // Add this import
 import './App.css';
 
 function App() {
@@ -27,12 +29,8 @@ function App() {
             <Projects />
             <Contact />
           </main>
-          <footer className="footer">
-            <div className="container">
-              <p>&copy; 2024 Your Name. All rights reserved.</p>
-              <p>Built with React & Framer Motion</p>
-            </div>
-          </footer>
+          <Footer />
+          <ChatbotTerminal /> {/* Add this line */}
         </motion.div>
       </AnimatePresence>
     </div>
